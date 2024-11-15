@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wnameth=device-wnameth, initial-scale=1.0">
+    <title>Apartamentos</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="topo">
+            <h1 class="titulo">Melhores Apês</h1>
+        </div>
+        <div class="main">
+            <div class="main-body">
+                <div class="content">
+                    <form class="formulario">
+                        <div class="esquerdo">
+                            <div class="field1">
+                                <input type="url" id="url" placeholder="URL" required>
+                            </div>
+                            <div class="field1">
+                                <input type="text" id="endereco" placeholder="Endereço">
+                            </div>
+                            <div class="field1">
+                                <input type="text" data-type="currency" id="valor" placeholder="Valor">
+                                <input type="text" id="condominio" placeholder="Condomínio">
+                                <select id="reforma" id="reforma">
+                                    <option value="" disabled selected>Reforma?</option>
+                                    <option value="Nenhuma">Nenhuma</option>
+                                    <option value="Muito pouca">Muito pouca</option>
+                                    <option value="Pouca">Pouca</option>
+                                    <option value="Média">Média</option>
+                                    <option value="Muita">Muita</option>
+                                    <option value="Apartamento inteiro">Apartamento inteiro</option>
+                                </select>
+                                <input type="number" id="nota" placeholder="Nota" min="0" max="10">
+                            </div>
+                            <div class="field1">
+                                <input type="text"  id="nome-contato" placeholder="Nome do contato">
+                                <input type="text" id="tel-contato" placeholder="Telefone de conato">
+                            </div>
+                        </div>
+                        <div class="direito">
+                            <button name="send">Add</button>
+                        </div>
+                    </form>
+                 </div> <!--content -->
+
+                 <div class="container-lista">
+                    <h3>Minha lista</h3>
+                    <ul class="lista"></ul>
+                </div>
+
+            </div> <!--main-body-->
+        </div> <!--main-->
+
+    </div>
+
+
+    <script type="module" src="./src/app.ts"></script>
+</body>
+</html>

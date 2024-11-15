@@ -1,0 +1,265 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100vw;
+    height: 100dvh;
+}
+
+body {
+    font-family: montserrat, arial, verdana;
+    background: transparent;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.titulo {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+.main-body {
+    width: 800px;
+}
+
+
+.content {
+    border-bottom: 1px solid #ee0979;
+    padding: 20px;
+    padding-bottom: 20px;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.field1 {
+    display: flex;
+    gap: 5px;
+    width: 100%;    
+}
+
+.esquerdo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.direito {
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-lista {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+h2 {
+    font-weight: 900;
+}
+
+h3 {
+    color:  #ee0979;
+    padding: 0 10px 0 10px;
+}
+
+h4 {
+    margin-bottom: 5px;
+    color: #2C3E50;
+}
+
+
+button {
+    padding: 15px 50px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 50px;
+    background: #ee0979;
+    color: #FFF
+}
+
+button:hover {
+    background-color: #A40250;
+}
+
+input, select {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+li {
+    opacity: 1;
+    margin-top: 20px;
+    animation: fadein 0.1s ease-in-out;
+}
+
+@keyframes fadein {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
+li > h3 {
+    font-weight: 800;
+}
+
+p, a, span {
+    padding: 10px 0 10px 0px;
+    font-weight: 800;
+    font-size: 15px;
+    color: #666;
+}
+
+a, .apeID {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 200;
+    color: #ee0979;
+}
+
+.apeID {
+    padding: 10px 0 0 0;
+    color: #333
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 755px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 30px;
+
+}
+
+.infos-valores, .infos-contatos {
+    display: flex;
+    flex: 1;
+    padding: 20px 0px 10px 0px;
+    gap: 20px;
+}
+
+.div-valores, .div-contatos {
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: start;
+}
+
+.div-contatos {
+    /* margin-top: -20px; */
+    /* border: 1px solid #ccc; */
+    /* padding: 0 0 0 10px; */
+    margin-bottom: 20px
+}
+
+.label-valores, .label-contatos {
+    position: absolute;
+    top: -8px;
+    left: -10px;
+    font-size: 12px;
+    font-weight: 100;
+    background-color: white;
+    padding: 0 10px 0 10px;
+}
+
+
+.imagens {
+    display: flex;
+    flex: 1;
+    flex-flow: column wrap;
+    height: 200px;
+    overflow: auto;
+    scrollbar-color: #ee0979 white;
+    scrollbar-width: thin;
+}
+
+.imagem {
+    width: 50%;
+    height: 50%;
+}
+
+.close-button, .edit-button {
+    background: #fff;
+    padding: 7px 6px;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    opacity: 50%;
+}
+
+.edit-button {
+    right: 40px;
+
+}
+
+.close-button:hover, .edit-button:hover{
+    opacity: 100%;
+    background: #ec5da2;
+}
+
+.checkbox {
+    width: 20px;
+}
+
+.valor, .condominio {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 180px;
+    height: 20px;
+}
+
+.valor::before, .condominio::before {
+    content: '\00a0R$ '
+}
+
+.reforma {
+    width: 150px;
+}
